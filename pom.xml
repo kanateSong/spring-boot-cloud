@@ -52,9 +52,11 @@
     </dependencyManagement>
 
     <modules>
+        <module>config-server</module>
         <module>eureka-server</module>
         <module>product-data-service</module>
         <module>product-view-service-feign</module>
+        <module>product-view-service-ribbon</module>
         <module>zuul</module>
     </modules>
 </project>

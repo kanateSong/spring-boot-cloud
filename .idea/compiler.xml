@@ -6,25 +6,31 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="product-view-service-ribbon" />
         <module name="zuul" />
         <module name="eureka-server" />
-        <module name="product-data-service" />
         <module name="product-view-service-feign" />
+        <module name="config-server" />
+        <module name="product-data-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="config-server" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="product-data-service" target="1.8" />
       <module name="product-view-service-feign" target="1.8" />
+      <module name="product-view-service-ribbon" target="1.8" />
       <module name="spring-boot-cloud" target="1.8" />
       <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="product-data-service" options="-parameters" />
       <module name="product-view-service-feign" options="-parameters" />
+      <module name="product-view-service-ribbon" options="-parameters" />
       <module name="spring-boot-cloud" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>

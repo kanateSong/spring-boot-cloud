@@ -13,7 +13,7 @@ import java.util.List;
  * @Date 2019/10/14
  * @Version V1.0
  **/
-@Component
+@Component//熔断器
 public class ProductClientFeignHystrix implements ProductFeignClient {
     @Override
     public List<Product> products() {

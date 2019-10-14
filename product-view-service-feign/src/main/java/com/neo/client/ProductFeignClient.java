@@ -14,6 +14,8 @@ import java.util.List;
  * @Date 2019/10/14
  * @Version V1.0
  **/
+
+//fallback：访问的 PRODUCT-DATA-SERVICE 不可用的话，就调用 ProductClientFeignHystrix 来进行反馈信息。
 @FeignClient(value = "PRODUCT-DATA-SERVICE",fallback = ProductClientFeignHystrix.class)
 public interface ProductFeignClient {
 
