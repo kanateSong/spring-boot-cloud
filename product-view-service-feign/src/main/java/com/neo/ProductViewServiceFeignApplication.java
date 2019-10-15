@@ -10,7 +10,6 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
-import org.springframework.context.annotation.Bean;
 
 import java.util.Scanner;
 import java.util.concurrent.ExecutionException;
@@ -26,11 +25,11 @@ public class ProductViewServiceFeignApplication {
 
     public static void main(String[] args) {
         //判断 rabiitMQ 是否启动
-        int rabbitMQPort = 5672;
+        /*int rabbitMQPort = 5672;
         if (NetUtil.isUsableLocalPort(rabbitMQPort)) {
             System.err.printf("未在端口%d 发现 rabbitMQ服务，请检查rabbitMQ 是否启动", rabbitMQPort);
             System.exit(1);
-        }
+        }*/
         int port = 0;
         int defaultPort = 8012;
         Future<Integer> future = ThreadUtil.execAsync(() -> {

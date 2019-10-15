@@ -19,7 +19,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <spring-cloud.version>Finchley.SR2</spring-cloud.version>
     </properties>
 
     <dependencies>
@@ -54,6 +54,7 @@
     <modules>
         <module>config-server</module>
         <module>eureka-server</module>
+        <module>gateway</module>
         <module>product-data-service</module>
         <module>product-view-service-feign</module>
         <module>product-view-service-ribbon</module>

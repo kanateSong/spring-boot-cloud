@@ -3,6 +3,7 @@ package com.neo.client;
 import com.neo.pojo.Product;
 import org.omg.CORBA.PUBLIC_MEMBER;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
@@ -21,4 +22,6 @@ public interface ProductFeignClient {
 
     @GetMapping("/products")
     public List<Product> products();
+
+
 }
